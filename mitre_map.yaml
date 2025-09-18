@@ -1,0 +1,9 @@
+ransomware:
+  tactics: [TA0040, TA0002]
+  techniques: [T1486, T1041]
+cve-2025:
+  tactics: [TA0001]
+  techniques: [T1190]
+apt:
+  tactics: [TA0042, TA0005]
+  techniques: [T1589, T1071]

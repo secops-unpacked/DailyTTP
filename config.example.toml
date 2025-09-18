@@ -1,0 +1,27 @@
+[app]
+report_title = "Daily Threat Digest"
+org_name = "Your Org"
+timezone = "Europe/Vienna"
+output_pdf = "daily-threat-report.pdf"
+days_back = 1
+
+[feeds]
+urls = [
+  "https://securelist.com/feed/",
+  "https://blog.talosintelligence.com/feed/"
+]
+
+[filters]
+malware = ["ransomware", "malware"]
+cve     = ["cve-", "zero-day"]
+apt     = ["apt", "espionage"]
+leak    = ["data leak", "breach"]
+
+[email]
+smtp_host = "smtp.example.com"
+smtp_port = 587
+smtp_user = "alerts@example.com"
+smtp_password = "CHANGE_ME"
+from_addr = "alerts@example.com"
+to_addrs = ["soc@example.com"]
+subject = "Daily Threat Report"
